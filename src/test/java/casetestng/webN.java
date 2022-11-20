@@ -1,0 +1,32 @@
+package casetestng;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class webN {
+	@Parameters ({"username","password"})
+	@Test
+	public void wbc(String username , String password) {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+	
+		driver.get("https://www.webs.com/s/login/relogin");
+		driver.manage().window().maximize();
+	
+		WebElement txtname = driver.findElement(By.name("j_username"));
+		txtname.sendKeys(username);
+	
+		WebElement txtpass = driver.findElement(By.name("j_password"));
+		txtpass.sendKeys(password);
+	
+		WebElement btnlogin = driver.findElement(By.xpath("//button[@alt='Sign In']"));
+		btnlogin.click();
+	}
+
+}

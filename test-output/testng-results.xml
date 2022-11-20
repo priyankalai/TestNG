@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="94910" started-at="2022-11-02T16:36:31Z" finished-at="2022-11-02T16:38:06Z">
+    <groups>
+    </groups>
+    <test name="chrome" duration-ms="90655" started-at="2022-11-02T16:36:31Z" finished-at="2022-11-02T16:38:01Z">
+      <class name="casetestng.Parallexectweb">
+        <test-method status="PASS" signature="PrE(java.lang.String)[pri:0, instance:casetestng.Parallexectweb@a67c67e]" name="PrE" duration-ms="90611" started-at="2022-11-02T16:36:31Z" finished-at="2022-11-02T16:38:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrE -->
+      </class> <!-- casetestng.Parallexectweb -->
+    </test> <!-- chrome -->
+    <test name="edge" duration-ms="94910" started-at="2022-11-02T16:36:31Z" finished-at="2022-11-02T16:38:06Z">
+      <class name="casetestng.Parallexectweb">
+        <test-method status="PASS" signature="PrE(java.lang.String)[pri:0, instance:casetestng.Parallexectweb@731a74c]" name="PrE" duration-ms="94872" started-at="2022-11-02T16:36:31Z" finished-at="2022-11-02T16:38:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrE -->
+      </class> <!-- casetestng.Parallexectweb -->
+    </test> <!-- edge -->
+  </suite> <!-- Suite -->
+</testng-results>
